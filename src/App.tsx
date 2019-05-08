@@ -6,7 +6,7 @@ import Counter from './components/Counter';
 // import logo from './logo.svg';
 
 class App extends React.Component {
-  public render() {
+  render() {
     return (
       <div className="App">
         <Counter />

@@ -16,14 +16,8 @@ export interface IProps {
 let input: HTMLInputElement | null;
 // 使用接口代替 PropTypes 进行类型校验
 class Counter extends React.Component<IProps> {
-    // constructor(props:IProps){
-    //     super(props)
-    //     this.state={
-    //         temp
-    //     }
-    // }
 
-  public handleSubmit = (e: React.FormEvent) => {
+  handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (!input!.value.trim()) {
             return;
@@ -32,11 +26,7 @@ class Counter extends React.Component<IProps> {
         input!.value = '';
     }
 
-    // public handleToggle=(e:React.MouseEvent)=>(id:number)=>{
-    //     this.props.toggle(id);
-    // }
-
-    public render() {
+    render() {
 
         const { state, toggle, setFilter } = this.props;
 
